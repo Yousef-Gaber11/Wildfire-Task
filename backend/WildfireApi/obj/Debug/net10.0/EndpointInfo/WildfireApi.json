@@ -1,0 +1,102 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "WildfireApi",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/fires": {
+      "post": {
+        "tags": [
+          "Fires"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/FireData"
+                }
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/FireData"
+                }
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/FireData"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "FireAttributes": {
+        "type": "object",
+        "properties": {
+          "objectid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firE_NAME": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "FireData": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "attributes": {
+            "$ref": "#/components/schemas/FireAttributes"
+          },
+          "geometry": {
+            "$ref": "#/components/schemas/FireGeometry"
+          }
+        },
+        "additionalProperties": false
+      },
+      "FireGeometry": {
+        "type": "object",
+        "properties": {
+          "x": {
+            "type": "number",
+            "format": "double"
+          },
+          "y": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Fires"
+    }
+  ]
+}

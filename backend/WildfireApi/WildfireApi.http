@@ -1,0 +1,6 @@
+@WildfireApi_HostAddress = http://localhost:5135
+
+GET {{WildfireApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

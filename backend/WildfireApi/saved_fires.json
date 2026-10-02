@@ -1,0 +1,310 @@
+[
+  {
+    "Id": 0,
+    "Attributes": {
+      "OBJECTID": 0,
+      "FIRE_NAME": "\u0628\u0633\u0645 \u0627\u0644\u0644\u0647"
+    },
+    "Geometry": {
+      "X": 0.1,
+      "Y": 0.1
+    }
+  },
+  {
+    "Id": 1,
+    "Attributes": {
+      "OBJECTID": 10,
+      "FIRE_NAME": "2"
+    },
+    "Geometry": {
+      "X": 0.4341,
+      "Y": 0.1
+    }
+  },
+  {
+    "Id": 5290346,
+    "Attributes": {
+      "OBJECTID": 5290346,
+      "FIRE_NAME": "Unnamed Fire"
+    },
+    "Geometry": {
+      "X": -127.15576171874363,
+      "Y": 34.994003757589724
+    }
+  },
+  {
+    "Id": 5290355,
+    "Attributes": {
+      "OBJECTID": 5290355,
+      "FIRE_NAME": "Unnamed Fire"
+    },
+    "Geometry": {
+      "X": -97.62725830078259,
+      "Y": 48.217352909293794
+    }
+  },
+  {
+    "Id": 5286182,
+    "Attributes": {
+      "OBJECTID": 5286182,
+      "FIRE_NAME": "Unnamed Fire"
+    },
+    "Geometry": {
+      "X": -93.2080078125025,
+      "Y": 44.96479793034067
+    }
+  },
+  {
+    "Id": 5290355,
+    "Attributes": {
+      "OBJECTID": 5290355,
+      "FIRE_NAME": "Unnamed Fire"
+    },
+    "Geometry": {
+      "X": -97.64648437500134,
+      "Y": 48.22467264957347
+    }
+  },
+  {
+    "Id": 5290358,
+    "Attributes": {
+      "OBJECTID": 5290358,
+      "FIRE_NAME": "Unnamed Fire"
+    },
+    "Geometry": {
+      "X": -89.25292968750352,
+      "Y": 54.74999097023248
+    }
+  },
+  {
+    "Id": 5286139,
+    "Attributes": {
+      "OBJECTID": 5286139,
+      "FIRE_NAME": "sss"
+    },
+    "Geometry": {
+      "X": -116.75170898437138,
+      "Y": 34.36157628749841
+    }
+  },
+  {
+    "Id": 5286202,
+    "Attributes": {
+      "OBJECTID": 5286202,
+      "FIRE_NAME": "UPDDBG"
+    },
+    "Geometry": {
+      "X": -117.13623046874628,
+      "Y": 32.73184089688061
+    }
+  },
+  {
+    "Id": 5286150,
+    "Attributes": {
+      "OBJECTID": 5286150,
+      "FIRE_NAME": "Wildfire Point"
+    },
+    "Geometry": {
+      "X": -122.3767089843699,
+      "Y": 37.69251435534022
+    }
+  },
+  {
+    "Id": 5286149,
+    "Attributes": {
+      "OBJECTID": 5286149,
+      "FIRE_NAME": "Wildfire Point"
+    },
+    "Geometry": {
+      "X": -122.39868164061988,
+      "Y": 37.753344013119346
+    }
+  },
+  {
+    "Id": 5286148,
+    "Attributes": {
+      "OBJECTID": 5286148,
+      "FIRE_NAME": "Wildfire Point"
+    },
+    "Geometry": {
+      "X": -122.53051757811986,
+      "Y": 37.64903402159147
+    }
+  },
+  {
+    "Id": 5286147,
+    "Attributes": {
+      "OBJECTID": 5286147,
+      "FIRE_NAME": "Wildfire Point"
+    },
+    "Geometry": {
+      "X": -122.47421264647924,
+      "Y": 37.763115548115685
+    }
+  },
+  {
+    "Id": 5285998,
+    "Attributes": {
+      "OBJECTID": 5285998,
+      "FIRE_NAME": "Wildfire Point"
+    },
+    "Geometry": {
+      "X": -122.28053569793194,
+      "Y": 37.8714996543837
+    }
+  },
+  {
+    "Id": 5286008,
+    "Attributes": {
+      "OBJECTID": 5286008,
+      "FIRE_NAME": "Wildfire Point"
+    },
+    "Geometry": {
+      "X": -122.27997779845681,
+      "Y": 37.872075559844
+    }
+  },
+  {
+    "Id": 5286007,
+    "Attributes": {
+      "OBJECTID": 5286007,
+      "FIRE_NAME": "Wildfire Point"
+    },
+    "Geometry": {
+      "X": -122.28135108947244,
+      "Y": 37.87224494294617
+    }
+  },
+  {
+    "Id": 5286137,
+    "Attributes": {
+      "OBJECTID": 5286137,
+      "FIRE_NAME": "Wildfire Point"
+    },
+    "Geometry": {
+      "X": -122.28182315825907,
+      "Y": 37.87315960496851
+    }
+  },
+  {
+    "Id": 5286017,
+    "Attributes": {
+      "OBJECTID": 5286017,
+      "FIRE_NAME": "Wildfire Point"
+    },
+    "Geometry": {
+      "X": -122.28182315825907,
+      "Y": 37.874514638942784
+    }
+  },
+  {
+    "Id": 5286015,
+    "Attributes": {
+      "OBJECTID": 5286015,
+      "FIRE_NAME": "Wildfire Point"
+    },
+    "Geometry": {
+      "X": -122.28212356566875,
+      "Y": 37.874345261059034
+    }
+  },
+  {
+    "Id": 5286150,
+    "Attributes": {
+      "OBJECTID": 5286150,
+      "FIRE_NAME": "Wildfire Point"
+    },
+    "Geometry": {
+      "X": -122.38769531249488,
+      "Y": 37.70120736475419
+    }
+  },
+  {
+    "Id": 5290371,
+    "Attributes": {
+      "OBJECTID": 5290371,
+      "FIRE_NAME": "Wildfire Point"
+    },
+    "Geometry": {
+      "X": -122.23388671874493,
+      "Y": 39.24927084623551
+    }
+  },
+  {
+    "Id": 5286139,
+    "Attributes": {
+      "OBJECTID": 5286139,
+      "FIRE_NAME": "sss"
+    },
+    "Geometry": {
+      "X": -116.76269531249635,
+      "Y": 34.36157628749842
+    }
+  },
+  {
+    "Id": 0,
+    "Attributes": {
+      "OBJECTID": 0,
+      "FIRE_NAME": "string"
+    },
+    "Geometry": {
+      "X": 0.1,
+      "Y": 0.1
+    }
+  },
+  {
+    "Id": 5286202,
+    "Attributes": {
+      "OBJECTID": 5286202,
+      "FIRE_NAME": "UPDDBG"
+    },
+    "Geometry": {
+      "X": -117.15820312499626,
+      "Y": 32.694865977890025
+    }
+  },
+  {
+    "Id": 5286139,
+    "Attributes": {
+      "OBJECTID": 5286139,
+      "FIRE_NAME": "sss"
+    },
+    "Geometry": {
+      "X": -116.71874999999638,
+      "Y": 34.379712580476415
+    }
+  },
+  {
+    "Id": 0,
+    "Attributes": {
+      "OBJECTID": 0,
+      "FIRE_NAME": "string"
+    },
+    "Geometry": {
+      "X": 0.1,
+      "Y": 0.1
+    }
+  },
+  {
+    "Id": 5290370,
+    "Attributes": {
+      "OBJECTID": 5290370,
+      "FIRE_NAME": "Wildfire Point"
+    },
+    "Geometry": {
+      "X": -114.78515624999689,
+      "Y": 40.313043208892566
+    }
+  },
+  {
+    "Id": 5290371,
+    "Attributes": {
+      "OBJECTID": 5290371,
+      "FIRE_NAME": "Wildfire Point"
+    },
+    "Geometry": {
+      "X": -122.25585937499491,
+      "Y": 39.23225314172702
+    }
+  }
+]

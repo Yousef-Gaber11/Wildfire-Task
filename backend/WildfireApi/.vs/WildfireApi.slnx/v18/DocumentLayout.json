@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Github_Repos\\Wildfire-Task\\backend\\WildfireApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A50559E5-698C-43FB-B1E8-74E8BF378307}|WildfireApi.csproj|d:\\github_repos\\wildfire-task\\backend\\wildfireapi\\saved_fires.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A50559E5-698C-43FB-B1E8-74E8BF378307}|WildfireApi.csproj|solutionrelative:saved_fires.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A50559E5-698C-43FB-B1E8-74E8BF378307}|WildfireApi.csproj|d:\\github_repos\\wildfire-task\\backend\\wildfireapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A50559E5-698C-43FB-B1E8-74E8BF378307}|WildfireApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A50559E5-698C-43FB-B1E8-74E8BF378307}|WildfireApi.csproj|d:\\github_repos\\wildfire-task\\backend\\wildfireapi\\wildfireapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A50559E5-698C-43FB-B1E8-74E8BF378307}|WildfireApi.csproj|solutionrelative:wildfireapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A50559E5-698C-43FB-B1E8-74E8BF378307}|WildfireApi.csproj|d:\\github_repos\\wildfire-task\\backend\\wildfireapi\\model\\firedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A50559E5-698C-43FB-B1E8-74E8BF378307}|WildfireApi.csproj|solutionrelative:model\\firedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A50559E5-698C-43FB-B1E8-74E8BF378307}|WildfireApi.csproj|d:\\github_repos\\wildfire-task\\backend\\wildfireapi\\controllers\\firescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A50559E5-698C-43FB-B1E8-74E8BF378307}|WildfireApi.csproj|solutionrelative:controllers\\firescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "saved_fires.json",
+              "DocumentMoniker": "D:\\Github_Repos\\Wildfire-Task\\backend\\WildfireApi\\saved_fires.json",
+              "RelativeDocumentMoniker": "saved_fires.json",
+              "ToolTip": "D:\\Github_Repos\\Wildfire-Task\\backend\\WildfireApi\\saved_fires.json",
+              "RelativeToolTip": "saved_fires.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-10-02T06:14:44.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Github_Repos\\Wildfire-Task\\backend\\WildfireApi\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Github_Repos\\Wildfire-Task\\backend\\WildfireApi\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T06:08:34.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FiresController.cs",
+              "DocumentMoniker": "D:\\Github_Repos\\Wildfire-Task\\backend\\WildfireApi\\Controllers\\FiresController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FiresController.cs",
+              "ToolTip": "D:\\Github_Repos\\Wildfire-Task\\backend\\WildfireApi\\Controllers\\FiresController.cs",
+              "RelativeToolTip": "Controllers\\FiresController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T06:07:14.409Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FireData.cs",
+              "DocumentMoniker": "D:\\Github_Repos\\Wildfire-Task\\backend\\WildfireApi\\Model\\FireData.cs",
+              "RelativeDocumentMoniker": "Model\\FireData.cs",
+              "ToolTip": "D:\\Github_Repos\\Wildfire-Task\\backend\\WildfireApi\\Model\\FireData.cs",
+              "RelativeToolTip": "Model\\FireData.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAswBQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-02T06:04:57.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WildfireApi",
+              "DocumentMoniker": "D:\\Github_Repos\\Wildfire-Task\\backend\\WildfireApi\\WildfireApi.csproj",
+              "RelativeDocumentMoniker": "WildfireApi.csproj",
+              "ToolTip": "D:\\Github_Repos\\Wildfire-Task\\backend\\WildfireApi\\WildfireApi.csproj",
+              "RelativeToolTip": "WildfireApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-10-02T06:03:45.45Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

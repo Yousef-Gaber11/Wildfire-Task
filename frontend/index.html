@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wildfire Management System</title>
+
+    <!-- ArcGIS API Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.31/esri/themes/light/main.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header Navigation Bar -->
+    <header id="header-panel">
+      <h2>Wildfire Management System</h2>
+    </header>
+
+    <!-- Main Application Container -->
+    <div id="main-container">
+      <!-- ArcGIS Map Viewport -->
+      <main id="viewDiv"></main>
+
+      <!-- Sidebar Panel for Managing Selected Features -->
+      <aside id="sidebar">
+        <h3>Selected Fires List</h3>
+        <div id="fires-list-container">
+          <!-- Dynamically populated selected items will appear here -->
+          <p
+            id="empty-msg"
+            style="color: #888; text-align: center; margin-top: 20px"
+          >
+            No fires selected yet.
+          </p>
+        </div>
+
+        <!-- Sidebar Actions Panel -->
+        <div id="sidebar-actions">
+          <button id="delete-btn" class="action-btn">Remove from Map</button>
+          <button id="save-btn" class="action-btn">Save to JSON</button>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Custom Popup Template for Feature Inspection -->
+    <div id="custom-popup" class="hidden">
+      <button id="popup-close">&times;</button>
+      <h4>Fire Details</h4>
+      <p><strong>ID:</strong> <span id="popup-id"></span></p>
+      <p><strong>Name:</strong> <span id="popup-name"></span></p>
+      <p><strong>Coordinates:</strong> <span id="popup-coords"></span></p>
+    </div>
+
+    <!-- ArcGIS Maps SDK for JavaScript -->
+    <script src="https://js.arcgis.com/4.31/"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
