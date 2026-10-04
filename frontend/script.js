@@ -1,3 +1,42 @@
+//eventtype for Metadata
+const eventTypeNames = {
+  0: "Division Break",
+  1: "Aerial Hazard",
+  4: "Camp",
+  6: "Drop Point",
+  7: "Fire Origin",
+  8: "Fire Station",
+  9: "First Aid Station",
+  10: "Helibase",
+  12: "Hot Spot",
+  16: "Lookout",
+  17: "Telephone / MediVac",
+  18: "Mobile Weather Unit",
+  20: "Safety Zone",
+  22: "Spot Fire",
+  25: "Water Source",
+  26: "Wind Speed Direction",
+};
+
+// ! Notification fun: Display success or error messages to the user
+function showNotification(message, type = "success") {
+  const notif = document.getElementById("app-notification");
+  if (!notif) return;
+
+  notif.textContent = message;
+  notif.style.backgroundColor = type === "success" ? "#2ecc71" : "#e74c3c";
+
+  notif.classList.remove("hidden");
+  notif.style.opacity = "1";
+
+  setTimeout(() => {
+    notif.style.opacity = "0";
+    setTimeout(() => {
+      notif.classList.add("hidden");
+    }, 300);
+  }, 2000);
+}
+
 require([
   "esri/Map",
   "esri/views/MapView",
@@ -16,9 +55,38 @@ require([
     center: [-119.4179, 36.7783],
     zoom: 4,
     // The default user interface components are available because I am using the map's zoom controls.
-    // ui: {
-    //   components: ["attribution"],
-    // },.
+    ui: {
+      components: ["attribution"],
+    },
+  });
+
+  // ! ZOOM CONTROLS
+
+  const zoomInBtn = document.getElementById("zoom-in-btn");
+  const zoomOutBtn = document.getElementById("zoom-out-btn");
+
+  zoomInBtn.addEventListener("click", () => {
+    view.goTo(
+      {
+        zoom: view.zoom + 1,
+        center: view.center,
+      },
+      {
+        duration: 200,
+      },
+    );
+  });
+
+  zoomOutBtn.addEventListener("click", () => {
+    view.goTo(
+      {
+        zoom: view.zoom - 1,
+        center: view.center,
+      },
+      {
+        duration: 200,
+      },
+    );
   });
 
   // Define the wildfire feature layer with a performance-optimized definition expression filter
@@ -56,7 +124,17 @@ require([
       const graphic = results[0].graphic;
       const objectId =
         graphic.attributes.objectid || graphic.attributes.OBJECTID;
-      const fireName = graphic.attributes.description || "Wildfire Point";
+
+      // 1
+      // const fireName = graphic.attributes.description || "Wildfire Point";
+      // 2
+      // const fireName =
+      //   graphic.attributes.description ||
+      //   `Wildfire Point (Type: ${graphic.attributes.eventtype})`;
+      // 3
+      const eventTypeCode = graphic.attributes.eventtype;
+      const fallbackName = eventTypeNames[eventTypeCode] || "Wildfire Point";
+      const fireName = fallbackName;
 
       const lon = graphic.geometry
         ? graphic.geometry.longitude || graphic.geometry.x
@@ -138,8 +216,9 @@ require([
     .getElementById("delete-btn")
     .addEventListener("click", async function () {
       if (selectedFires.length === 0) {
-        alert(
+        showNotification(
           "Please select at least one fire from the list first before deleting.",
+          "error",
         );
         return;
       }
@@ -152,7 +231,10 @@ require([
           layerView.filter = {
             where: `OBJECTID NOT IN (${objectIds.join(",")})`,
           };
-          alert("Selected fires successfully removed from the map view.");
+          showNotification(
+            "Selected fires successfully removed from the map view.",
+            "success",
+          );
         }
 
         selectedFires = [];
@@ -168,7 +250,10 @@ require([
     .getElementById("save-btn")
     .addEventListener("click", async function () {
       if (selectedFires.length === 0) {
-        alert("Please select at least one fire from the map to save.");
+        showNotification(
+          "Please select at least one fire from the map to save.",
+          "error",
+        );
         return;
       }
 
@@ -184,18 +269,25 @@ require([
         if (response.ok) {
           const result = await response.json();
           console.log(result);
-          alert(result.message || "Data successfully saved to server storage!");
+          showNotification(
+            result.message || "Data successfully saved to server storage!",
+            "success",
+          );
 
           selectedFires = [];
           updateSidebarUI();
           popupEl.classList.add("hidden");
         } else {
-          alert("Server responded with an error while saving data.");
+          showNotification(
+            "Server responded with an error while saving data.",
+            "error",
+          );
         }
       } catch (error) {
         console.error("Connection Error:", error);
-        alert(
+        showNotification(
           "Failed to connect to backend API. Please ensure the C# server is running.",
+          "error",
         );
       }
     });

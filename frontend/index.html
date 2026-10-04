@@ -21,7 +21,17 @@
     <!-- Main Application Container -->
     <div id="main-container">
       <!-- ArcGIS Map Viewport -->
-      <main id="viewDiv"></main>
+      <main id="viewDiv">
+        <!-- map -->
+        <!-- zoom controls -->
+        <div id="custom-zoom-controls">
+          <button id="zoom-in-btn">+</button>
+          <button id="zoom-out-btn">-</button>
+        </div>
+
+        <!--  Notifications -->
+        <div id="app-notification" class="hidden"></div>
+      </main>
 
       <!-- Sidebar Panel for Managing Selected Features -->
       <aside id="sidebar">

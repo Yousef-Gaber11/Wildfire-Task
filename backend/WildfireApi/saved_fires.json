@@ -306,5 +306,71 @@
       "X": -122.25585937499491,
       "Y": 39.23225314172702
     }
+  },
+  {
+    "Id": 5286155,
+    "Attributes": {
+      "OBJECTID": 5286155,
+      "FIRE_NAME": "Wildfire Point"
+    },
+    "Geometry": {
+      "X": -87.58300781250396,
+      "Y": 42.03297433245232
+    }
+  },
+  {
+    "Id": 5290408,
+    "Attributes": {
+      "OBJECTID": 5290408,
+      "FIRE_NAME": "Wildfire Point"
+    },
+    "Geometry": {
+      "X": -106.17187499999912,
+      "Y": 39.027718840223834
+    }
+  },
+  {
+    "Id": 0,
+    "Attributes": {
+      "OBJECTID": 0,
+      "FIRE_NAME": "string"
+    },
+    "Geometry": {
+      "X": 0.1,
+      "Y": 0.1
+    }
+  },
+  {
+    "Id": 5290408,
+    "Attributes": {
+      "OBJECTID": 5290408,
+      "FIRE_NAME": "Wildfire Point"
+    },
+    "Geometry": {
+      "X": -106.17187499999912,
+      "Y": 39.027718840223834
+    }
+  },
+  {
+    "Id": 5290370,
+    "Attributes": {
+      "OBJECTID": 5290370,
+      "FIRE_NAME": "Wildfire Point"
+    },
+    "Geometry": {
+      "X": -114.7412109374969,
+      "Y": 40.313043208892566
+    }
+  },
+  {
+    "Id": 5290369,
+    "Attributes": {
+      "OBJECTID": 5290369,
+      "FIRE_NAME": "Wildfire Point"
+    },
+    "Geometry": {
+      "X": -114.47753906249694,
+      "Y": 41.90227704097467
+    }
   }
 ]
