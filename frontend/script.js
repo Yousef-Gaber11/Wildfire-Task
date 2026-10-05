@@ -149,9 +149,29 @@ require([
         popupName.textContent = fireName;
         popupCoords.textContent = `${lon.toFixed(4)}, ${lat.toFixed(4)}`;
 
-        popupEl.style.left = `${event.x + 15}px`;
-        popupEl.style.top = `${event.y - 15}px`;
+        // 1
+        // popupEl.style.left = `${event.x + 15}px`;
+        // popupEl.style.top = `${event.y - 15}px`;
+        // popupEl.classList.remove("hidden");
+        // 2
+        // fun to update popup position based on map view changes (zoom/move)
+        function updatePopupPosition() {
+          const screenPoint = view.toScreen(graphic.geometry);
+          if (screenPoint) {
+            popupEl.style.left = `${screenPoint.x + 15}px`;
+            // const safeTop = Math.max(70, screenPoint.y - 15);
+            popupEl.style.top = `${screenPoint.y - 15}px`;
+            // popupEl.style.top = `${safeTop}px`;
+          }
+        }
+
+        updatePopupPosition();
         popupEl.classList.remove("hidden");
+
+        // Update popup position when the map extent changes (e.g., zoom or pan)
+        const reactiveWatch = view.watch("extent", () => {
+          updatePopupPosition();
+        });
 
         // Format payload object matching backend expectations
         const fireObject = {

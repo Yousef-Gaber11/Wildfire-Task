@@ -29,6 +29,15 @@
           <button id="zoom-out-btn">-</button>
         </div>
 
+        <!-- Custom Popup Template for Feature Inspection -->
+        <div id="custom-popup" class="hidden">
+          <button id="popup-close">&times;</button>
+          <h4>Fire Details</h4>
+          <p><strong>ID:</strong> <span id="popup-id"></span></p>
+          <p><strong>Name:</strong> <span id="popup-name"></span></p>
+          <p><strong>Coordinates:</strong> <span id="popup-coords"></span></p>
+        </div>
+
         <!--  Notifications -->
         <div id="app-notification" class="hidden"></div>
       </main>
@@ -52,15 +61,6 @@
           <button id="save-btn" class="action-btn">Save to JSON</button>
         </div>
       </aside>
-    </div>
-
-    <!-- Custom Popup Template for Feature Inspection -->
-    <div id="custom-popup" class="hidden">
-      <button id="popup-close">&times;</button>
-      <h4>Fire Details</h4>
-      <p><strong>ID:</strong> <span id="popup-id"></span></p>
-      <p><strong>Name:</strong> <span id="popup-name"></span></p>
-      <p><strong>Coordinates:</strong> <span id="popup-coords"></span></p>
     </div>
 
     <!-- ArcGIS Maps SDK for JavaScript -->
