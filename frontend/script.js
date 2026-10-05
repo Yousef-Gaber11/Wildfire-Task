@@ -100,6 +100,8 @@ require([
 
   // Centralized state array to track selected features
   let selectedFires = [];
+  // Array to track deleted IDs points
+  let allDeletedObjectIds = [];
 
   // DOM element references for the custom popup component
   const popupEl = document.getElementById("custom-popup");
@@ -245,11 +247,16 @@ require([
 
       try {
         const layerView = await view.whenLayerView(wildfireLayer);
-        const objectIds = selectedFires.map((f) => f.attributes.OBJECTID);
+        // extract IDs of selected features to filter out
+        const newIdsToDelete = selectedFires.map((f) => f.attributes.OBJECTID);
+        // Add the new IDs to the list of all deleted IDs (set ensures uniqueness)
+        allDeletedObjectIds = [
+          ...new Set([...allDeletedObjectIds, ...newIdsToDelete]),
+        ];
 
-        if (objectIds.length > 0) {
+        if (allDeletedObjectIds.length > 0) {
           layerView.filter = {
-            where: `OBJECTID NOT IN (${objectIds.join(",")})`,
+            where: `OBJECTID NOT IN (${allDeletedObjectIds.join(",")})`,
           };
           showNotification(
             "Selected fires successfully removed from the map view.",
